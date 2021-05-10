@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron jumbotron-fluid custom-jumbotron">
+    <div class="container text-center">
+      <h1>Work Day Scheduler</h1>
+      <h2>A Simple Calendar App</h2>
+      <h2>Current Time &amp; Date: <br /> <span id="time-display">00:00:00</span></h2>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-info text-light">
+        <div class="container text-center">
+        </div>
+    </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h3>Time</h3>
+            <br />
+            <form id="skills-form">
+              <div class="form-group row">
+                <label for="9 am" class="col-sm-4 col-form-label">9 am:
+                </label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="skill-name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="date" class="col-sm-4 col-form-label">Date: </label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="datepicker" autocomplete="off" />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-6">
+            <br />
+            <ul class="list-group" id="skills-list"></ul>
+          </div>
+
+        </div>
+      </div>
+
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+    </html>
